@@ -9,7 +9,7 @@ NOTE: This file contains button CSS.
 /***************************
         button
 ***************************/
-.button { background: #ffdd21; padding: 12px 20px; font-size: 13px; letter-spacing: 1px; font-family: 'Montserrat', sans-serif; border: 0; color: #ffffff; text-transform: uppercase; font-weight: 400; display: inline-block; border-radius: 30px; text-align: center; border:2px solid #ffdd21; }
+.button { background: #ffdd21; padding: 12px 20px; font-size: 13px; letter-spacing: 1px; font-weight: 700!important; font-family: 'Nunito Sans', sans-serif; border: 0; color: #ffffff; text-transform: uppercase; font-weight: 400; display: inline-block; border-radius: 30px; text-align: center; border:2px solid #ffdd21; }
 .button + .button {margin-left: 20px;}
 .button:hover, .button:focus { background: #353535; color: #ffffff; border-color: #353535; }
 button { transition: all 0.5s ease-in-out; -webkit-transition: all 0.5s ease-in-out; -o-transition: all 0.5s ease-in-out; -ms-transition: all 0.5s ease-in-out; -moz-transition: all 0.5s ease-in-out; }
@@ -20,7 +20,7 @@ button { transition: all 0.5s ease-in-out; -webkit-transition: all 0.5s ease-in-
 .button.white { background: #fff; color: #ffdd21; }
 .button.white:hover, .button.white:focus { background: #353535; color: #ffffff;}
 .button.border { background: transparent; border: 2px solid #ffdd21; color: #323232; }
-.button.border:hover, .button.border:focus { background: #ffdd21; color: #ffffff; border-color: #ffdd21; }
+.button.border:hover, .button.border:focus { outline: none;background: #ffdd21; color: #ffffff; border-color: #ffdd21; }
 .button.border.gray { background: transparent; border: 2px solid #e0e0e0; color: #aaaaaa; }
 .button.border.gray:hover, .button.border.gray:focus { background: #ffdd21; color: #ffffff; border-color: #ffdd21; }
 .button.border.white { background: transparent; border: 2px solid #fff; color: #fff; }
@@ -34,10 +34,10 @@ button { transition: all 0.5s ease-in-out; -webkit-transition: all 0.5s ease-in-
 .button.arrow:hover { color: #353535; }
 .button.arrow.white { color: #ffffff; border: none; }
 .button.arrow.white:hover { color: #aaaaaa; background: transparent; }
-.button.icon-color{background: none; border: none; color: #ffdd21; padding: 0}
+.button.icon-color{background: none; border: none; color: #363636; padding: 0}
 .button.icon-color:hover{color: #353535; background: transparent; }
-.button.icon-color i{border: 1px solid #ffdd21; border-radius: 50%; height: 22px; width: 22px; line-height: 20px;  margin-left: 10px; transform: translateX(0px); transition: all 0.5s cubic-bezier(0.76, 0.46, 0.22, 1) 0s;}
-.button.icon-color:hover i{background: #353535; border-color: #353535; color: #ffffff; transform: translateX(3px);}
+.button.icon-color i{border: 1.2px solid #363636; font-weight: 700 !important; border-radius: 50%; height: 22px; width: 22px; line-height: 20px;  margin-left: 10px; transform: translateX(0px); transition: all 0.5s cubic-bezier(0.76, 0.46, 0.22, 1) 0s;}
+.button.icon-color:hover i{background: #ffdd21; border-color: #ffdd21; color: #fff; transform: translateX(3px);}
 .button.icon-color.white:hover, .button.icon-color.white:focus{color: #ffffff; border:none; background: none;}
 .button.icon-color.white:hover i, .button.icon-color.white:focus i{background: #ffffff; color: #ffdd21;}
 .theme-bg .button.icon-color{color: #ffffff;}
