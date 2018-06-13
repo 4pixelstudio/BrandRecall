@@ -9,7 +9,7 @@ NOTE: This file contains button CSS.
 /***************************
         button
 ***************************/
-.button { background: #ffdd21; padding: 12px 20px; font-size: 13px; letter-spacing: 1px; font-weight: 700!important; font-family: 'Nunito Sans', sans-serif; border: 0; color: #ffffff; text-transform: uppercase; font-weight: 400; display: inline-block; border-radius: 30px; text-align: center; border:2px solid #ffdd21; }
+.button { background: #ffdd21; padding: 13px 20px 12px 20px; font-size: 13px; letter-spacing: 1px; font-weight: 700!important; font-family: 'Nunito Sans', sans-serif; border: 0; color: #ffffff; text-transform: uppercase; font-weight: 400; display: inline-block; border-radius: 30px; text-align: center; border:2px solid #ffdd21; }
 .button + .button {margin-left: 20px;}
 .button:hover, .button:focus { background: #353535; color: #ffffff; border-color: #353535; }
 button { transition: all 0.5s ease-in-out; -webkit-transition: all 0.5s ease-in-out; -o-transition: all 0.5s ease-in-out; -ms-transition: all 0.5s ease-in-out; -moz-transition: all 0.5s ease-in-out; }

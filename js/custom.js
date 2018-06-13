@@ -839,7 +839,12 @@ var _arr  = {};
         POTENZA.mobileview();
     });
 })(jQuery);
+
 // CUSTOM
+
+if ($(window).scrollTop() > 100) {
+    $('#menu').addClass('sticky');
+}
 
 $(window).scroll(function() {
 
@@ -856,7 +861,7 @@ $(document).ready(function(){
         $.fn.modal.Constructor.prototype.setScrollbar = function () {
             oldSSB.apply(this);
             if(this.bodyIsOverflowing && this.scrollbarWidth) {
-                $('.menu-links').css('padding-right', this.scrollbarWidth);
+                $('.menu-links').css('padding-right', this.scrollbarWidth + 11.5);
             }       
         }
         var oldRSB = $.fn.modal.Constructor.prototype.resetScrollbar;
