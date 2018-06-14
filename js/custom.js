@@ -871,3 +871,21 @@ $(document).ready(function(){
         }
     });
 });
+
+// var fixed = document.getElementById('fixed');
+
+// fixed.addEventListener('touchmove', function(e) {
+
+//         e.preventDefault();
+
+// }, false);
+
+$('.toggle-icons-opacity').click(function(){
+    if($('.social-icons-main').hasClass('opacity-toggle'))
+    {
+        $('.social-icons-main').removeClass('opacity-toggle');
+    }
+    else{
+        $('.social-icons-main').addClass('opacity-toggle');
+    }
+});

@@ -20,6 +20,7 @@
 
     <!-- font -->
     <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,600,700,800" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 
     <!-- Plugins -->
     <link rel="stylesheet" type="text/css" href="css/plugins-css.css" />
@@ -68,7 +69,7 @@
                 <!-- menu start -->
                 <nav id="menu" class="mega-menu mobileTopFixed">
                     <!-- menu list items container -->
-                    <section class="menu-list-items">
+                    <section class="menu-list-items" id='fixed'>
                         <div class="container-fluid">
                             <div class="row">
                                 <div class="col-lg-12 col-md-12">
@@ -81,7 +82,7 @@
                                         </li>
                                     </ul>
                                     <!-- menu links -->
-                                    <div class="menu-bar">
+                                    <div class="menu-bar clearfix">
                                         <ul class="menu-links">
                                             <li class="active"><a href="index.html">Home </a></li>
                                             <li class=""><a class="move" href="index.html#about-us">About</a></li>
@@ -132,10 +133,13 @@
             <div class="row social-icon-row">
                 <nav class="social-icons left-vertical">
                     <ul class="social-menu-fixed" style="list-style: none;">
-                        <li class="social-fixed fb"><a href="https://in.pinterest.com/brandrecall/" target="_blank" style="font-size:inherit !important;"><i class="fa fa-pinterest" style="color:#ffdd21;"></i></a></li>
-                        <li class="social-fixed"><a href="https://www.instagram.com/brandrecall/" target="_blank" style="font-size:inherit !important;"><i class="fa fa-instagram" style="color:#ffdd21;"></i></a></li>
-                        <li class="social-fixed"><a href="https://twitter.com/Brandrecall2013" target="_blank" style="font-size:inherit !important;"><i class="fa fa-twitter" style="color:#ffdd21;"></i></a></li>
-                        <li class="social-fixed fb"><a href="https://plus.google.com/u/0/+BrandRecall" target="_blank" style="font-size:inherit !important;"><i class="fa fa-google-plus" style="color:#ffdd21;"></i></a></li>
+                        <li class="social-fixed toggle-icons-opacity"><a><i class="fas fa-share-alt" style="color:#ffdd21;"></i></a></li>
+                        <div class="social-icons-main" style="display: inline-block;">
+                            <li class="social-fixed fb"><a href="https://in.pinterest.com/brandrecall/" target="_blank" style="font-size:inherit !important;"><i class="fab fa-pinterest" style="color:#ffdd21;"></i></a></li>
+                            <li class="social-fixed"><a href="https://www.instagram.com/brandrecall/" target="_blank" style="font-size:inherit !important;"><i class="fab fa-instagram" style="color:#ffdd21;"></i></a></li>
+                            <li class="social-fixed"><a href="https://twitter.com/Brandrecall2013" target="_blank" style="font-size:inherit !important;"><i class="fab fa-twitter" style="color:#ffdd21;"></i></a></li>
+                            <li class="social-fixed fb"><a href="https://plus.google.com/u/0/+BrandRecall" target="_blank" style="font-size:inherit !important;"><i class="fab fa-google-plus" style="color:#ffdd21;"></i></a></li>
+                        </div>
                     </ul>
                 </nav>
             </div>
@@ -215,7 +219,7 @@
                     <div class="col-lg-4 col-md-4 col-sm-4 xs-mb-30">
                         <div class="feature-text m left-icon" id='about-first-div'>
                             <div class="feature-icon">
-                                <span class="fa fa-pencil-square-o theme-color" aria-hidden="true"></span>
+                                <span class="fa fa-pencil-alt theme-color" aria-hidden="true"></span>
                             </div>
                             <div class="feature-info">
                                 <h5>Our Mission</h5>
@@ -226,7 +230,7 @@
                     <div class="col-lg-4 col-md-4 col-sm-4 xs-mb-30">
                         <div class="feature-text left-icon mt-60">
                             <div class="feature-icon">
-                                <span class="fa fa-dot-circle-o theme-color" aria-hidden="true"></span>
+                                <span class="far fa-dot-circle theme-color" aria-hidden="true"></span>
                             </div>
                             <div class="feature-info">
                                 <h5>Our Vision</h5>
@@ -237,7 +241,7 @@
                     <div class="col-lg-4 col-md-4 col-sm-4">
                         <div class="feature-text left-icon mt-60">
                             <div class="feature-icon">
-                                <span class="fa fa-thumbs-o-up theme-color" aria-hidden="true"></span>
+                                <span class="far fa-thumbs-up theme-color" aria-hidden="true"></span>
                             </div>
                             <div class="feature-info">
                                 <h5 class="text-back">Our Values</h5>
@@ -250,7 +254,7 @@
                     <div class="col-lg-4 col-md-4 col-sm-4 xs-mb-30">
                         <div class="feature-text m left-icon mt-60">
                             <div class="feature-icon">
-                                <span class="fa fa-laptop theme-color" aria-hidden="true"></span>
+                                <span class="fas fa-desktop theme-color" aria-hidden="true"></span>
                             </div>
                             <div class="feature-info">
                                 <h5>Our Team</h5>
@@ -261,7 +265,7 @@
                     <div class="col-lg-4 col-md-4 col-sm-4 xs-mb-30">
                         <div class="feature-text left-icon mt-60">
                             <div class="feature-icon">
-                                <span class="fa fa-heart-o theme-color" aria-hidden="true"></span>
+                                <span class="far fa-heart theme-color" aria-hidden="true"></span>
                             </div>
                             <div class="feature-info">
                                 <h5>Our USP</h5>
@@ -300,30 +304,15 @@ most Awesome- -->
                         <div class="section-title">
                             <h6>Who we are?</h6>
                             <h2>Our History</h2>
-                            <!-- <p class="text-white">Truly ideal solutions for your business. Create a website that you are gonna be proud of. </p> -->
                         </div>
 
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
                             specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum
                             passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                        <!-- <div class="row mt-30">
-                            <div class="col-sm-6 col-xs-6 col-xx-12">
-                                <ul class="list list-unstyled list-hand">
-                                    <li class="text-white"> Award-winning design</li>
-                                    <li class="text-white"> Super Fast Customer support </li>
-                                </ul>
-                            </div>
-                            <div class="col-sm-6 col-xs-6 col-xx-12">
-                                <ul class="list list-unstyled list-hand">
-                                    <li class="text-white"> Easy to Customize pages</li>
-                                    <li class="text-white"> Powerful Performance </li>
-                                </ul>
-                            </div>
-                        </div> -->
 
                         <div class="row mt-40">
                             <div class="col-lg-12">
-                                <a class="button border black portfolio" href="#"><span style="font-weight: 700 !important"> Read More <i class="fa fa-long-arrow-right"></i></span></a>
+                                <a class="button border black portfolio" href="#"><span style="font-weight: 700 !important"> Read More <i class="fas fa-long-arrow-alt-right"></i></span></a>
                             </div>
                         </div>
                     </div>
@@ -349,7 +338,7 @@ Services- -->
                     <div class="col-lg-12 col-md-12 col-sm-12 xs-mb-30">
                         <div class="feature-text m left-icon mt-30">
                             <div class="feature-icon">
-                                <span class="fa fa-bookmark-o theme-color" aria-hidden="true"></span>
+                                <span class="fa fa-thumbtack theme-color" aria-hidden="true"></span>
                             </div>
                             <div class="feature-info">
                                 <h4>Are you looking for a graphic design studio that can work as your creative back office?</h4>
@@ -362,7 +351,7 @@ Services- -->
                     <div class="col-lg-12 col-md-12 col-sm-12 xs-mb-30">
                         <div class="feature-text m left-icon mt-60">
                             <div class="feature-icon">
-                                <span class="fa fa-bookmark-o theme-color" aria-hidden="true"></span>
+                                <span class="fa fa-thumbtack theme-color" aria-hidden="true"></span>
                             </div>
                             <div class="feature-info">
                                 <h4>Our design studio offers you the best graphic design services on retainership model.</h4>
@@ -375,7 +364,7 @@ Services- -->
                     <div class="col-lg-12 col-md-12 col-sm-12 xs-mb-30">
                         <div class="feature-text m left-icon mt-60">
                             <div class="feature-icon">
-                                <span class="fa fa-bookmark-o theme-color" aria-hidden="true"></span>
+                                <span class="fa fa-thumbtack theme-color" aria-hidden="true"></span>
                             </div>
                             <div class="feature-info">
                                 <h4>Hire us, brief us and experience a hassle free approach to graphic designing.</h4>
@@ -638,7 +627,7 @@ Services -->
 
             <div class="row text-center mt-40">
                 <div class="col-lg-12">
-                    <a class="button border black portfolio" href="portfolio.html"><span style="font-weight: 700 !important"> View All <i class="fa fa-long-arrow-right"></i></span></a>
+                    <a class="button border black portfolio" href="portfolio.html"><span style="font-weight: 700 !important"> View All <i class="fa fa-long-arrow-alt-right"></i></span></a>
                 </div>
             </div>
         </section>
@@ -729,7 +718,7 @@ Services -->
                 </div>
                 <div class="row text-center mt-40">
                     <div class="col-lg-12">
-                        <a class="button border black portfolio" data-toggle="modal" data-target="#myModal"><span style="font-weight: 700 !important"> Request a Quote <i class="fa fa-long-arrow-right"></i></span></a>
+                        <a class="button border black portfolio" data-toggle="modal" data-target="#myModal"><span style="font-weight: 700 !important"> Request a Quote <i class="fa fa-long-arrow-alt-right"></i></span></a>
                     </div>
                 </div>
                 <div class="row mt-40">
@@ -874,7 +863,7 @@ action-box -->
        <ul class="addresss-info"> 
            <li><i class="fa fa-map-marker"></i> <p>Address: C-49, IIIrd Floor Sector 10, Noida 201301</p> </li>
            <li><i class="fa fa-phone"></i> <a href="tel:9891348287"> <span>+91 120 4554247 / 9891348287 </span> </a> </li>
-           <li><i class="fa fa-envelope-o"></i>Email: <a href="mailto:hello@brandrecall.com">hello@brandrecall.com</a></li>
+           <li><i class="fa fa-envelope"></i>Email: <a href="mailto:hello@brandrecall.com">hello@brandrecall.com</a></li>
          </ul>
        </div>
    <div class="col-lg-4 col-md-4 col-sm-6">
@@ -899,9 +888,9 @@ action-box -->
          <div class="col-lg-6 col-md-6 col-sm-6 text-right xs-text-left">
            <div class="footer-widget-social">
             <ul> 
-             <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-             <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-             <li><a href="#"><i class="fa fa-linkedin"></i> </a></li>
+             <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+             <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+             <li><a href="#"><i class="fab fa-linkedin-in"></i> </a></li>
             </ul>
           </div>
          </div>

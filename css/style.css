@@ -1449,7 +1449,7 @@ img.logo-small { height: 40px; margin: 30px 0; position: relative; }
 .footer-widget a:hover { color: #ffdd21; } 
 .footer-widget-social {margin-top: 5px; } 
 .footer-widget-social li  { display: inline-block;} 
-.footer-widget-social a i { display: inline-block; color: rgba(255,255,255,0.5); background: none; border-radius: 50%; width: 35px; height: 35px; text-align:center; line-height: 37px; font-size: 14px; -webkit-transition: all 0.3s ease-out 0s; -moz-transition: all 0.3s ease-out 0s; -ms-transition: all 0.3s ease-out 0s; -o-transition: all 0.3s ease-out 0s; transition: all 0.3s ease-out 0s;} 
+.footer-widget-social a i { display: inline-block; color: #363636; background: none; border-radius: 50%; width: 35px; height: 35px; text-align:center; line-height: 37px; font-size: 14px; -webkit-transition: all 0.3s ease-out 0s; -moz-transition: all 0.3s ease-out 0s; -ms-transition: all 0.3s ease-out 0s; -o-transition: all 0.3s ease-out 0s; transition: all 0.3s ease-out 0s;} 
 .footer-widget-social a i:hover{background: #ffdd21;}
 .footer .footer-nav ul li {    display: inline-block;}
 .footer .footer-nav ul li a { margin: 0 5px; color: #323232;}
@@ -1761,7 +1761,6 @@ i.material-icons.rotate-down.md-36:hover { padding-bottom: 5px; transition: 0.5s
 html *
 {
   font-family: 'Nunito Sans', sans-serif;
-  font-weight: 400!important;
 }
 
 /*
@@ -2166,4 +2165,48 @@ b, strong {
     display: inline-block;
     text-align: right;
     width: 100%;
+}
+
+/* Menu Fix */
+
+@media screen and (max-height: 500px){
+    .menu-links{
+        max-height: calc(100vh - 75px) !important;
+    }
+}
+
+
+@media screen and (max-height: 992px) and (max-width:992px){
+    .mega-menu .menu-links > li:last-child{
+        border-bottom: 1.5px solid #ffdd21;
+    }
+
+    #menu{
+        position: relative !important;
+    }
+}
+
+@media screen and (min-width:768px)
+{
+    .social-menu-fixed > li{
+        display: none;
+        cursor: pointer;
+    }  
+}
+
+@media screen and (max-width:768px)
+{
+    .social-icons-main{
+        opacity: 0;
+        transition: 0.3s all;
+    }
+    
+    .social-menu-fixed > li{
+        cursor: pointer;
+    } 
+}
+
+.opacity-toggle{
+    opacity: 1 !important;
+    transition: 0.3s all;
 }

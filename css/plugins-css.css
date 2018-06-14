@@ -12,7 +12,6 @@ NOTE:  This file includes all plugins. If you don't want to use any plugins from
 @import url("plugins/bootstrap.min.css");
 @import url("plugins/mega_menu.css");
 @import url("plugins/animate.css");
-@import url("plugins/font-awesome.min.css");
 @import url("plugins/bootstrap-datetimepicker.min.css");
 @import url("plugins/dataTables.bootstrap.min.css");
 @import url("plugins/magnific-popup.css");

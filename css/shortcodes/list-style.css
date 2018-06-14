@@ -14,7 +14,7 @@ ul.list li { margin:5px 0; padding-left:24px; position: relative; line-height: 2
 ul.list i { position: absolute; left: 0; top: 5px; }
 ul.list.theme-color li i { color: #ffdd21; }
 ul.list.theme-color li { color: #333333; }
-ul.list li:after { content:""; font-family: 'FontAwesome'; position:absolute; color:#ffdd21; left:0; top:0; }
+ul.list li:after { content:""; font-family: 'Font Awesome\ 5 Free'; font-weight: 900; position:absolute; color:#ffdd21; left:0; top:0; }
 
 /* Ul List Mark */
 ul.list-mark{padding:0; margin:0;}

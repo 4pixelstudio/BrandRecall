@@ -239,7 +239,7 @@ h4 {font-size: 18px;}
 
 
 @media (max-width: 1025px) {
-.mega-menu .menu-links > li > a { padding: 10px 8px; }
+.mega-menu .menu-links > li > a { padding: 16px 8px; }
 .portfolio-title { padding:30px 30px 30px; }
  /*error*/
 .error-search-box { width: 100%; text-align: center; }
@@ -531,7 +531,7 @@ header.one-page { position: relative; background: #323232; }
 .team-3-box .team-overlay {padding: 30px 15px 0;}
 .team-3-box {padding: 10px;}
 .menu-bar {float: none;}
-.mega-menu .menu-links > li > a{line-height: normal;}
+.mega-menu .menu-links > li > a{line-height: normal; width: 100%; text-align: center;}
 .mega-menu .menu-mobile-collapse-trigger {height: 40px; top: 46px; transform: translateY(-50%); z-index: 9999; }
 .search-cart {display: inline-block; position: absolute; right: 60px; top: 0; z-index: 999; }
 .search-active .search-cart  { left: 0; width: 100%; }
