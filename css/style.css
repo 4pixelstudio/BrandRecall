@@ -804,7 +804,7 @@ margin-left: -17px; line-height: 50px; }
  /*Blog  1*/
 .blog-box { padding: 30px; border:1px solid #ddd; position: relative; z-index: 1; } 
 .blog-info { position: relative; z-index: 9; }
-.blog-info span { color: #626262; font-size: 14px; margin-right: 6px; }
+.blog-info span { color: #363636; font-size: 13px; margin-right: 6px; font-weight: 700 }
 .blog-info h4 { font-weight: 600; font-size: 18px;} 
 .blog-box .post-format-icon{text-align: right; position: relative; z-index: 9}
 .blog-box .post-format-icon i { padding-right: 0; font-size: 35px;  color: #e1e1e1; } 
@@ -2156,9 +2156,13 @@ b, strong {
     font-weight: 700 !important;
 }
 
-.single-blog-desc i{
+.single-blog-desc .stats i{
     padding-left: 15px;
     padding-right: 2px; 
+}
+
+.single-blog-desc .stats span:first-child i{
+    padding-left: 0px; 
 }
 
 .stats{
@@ -2194,7 +2198,7 @@ b, strong {
     }  
 }
 
-@media screen and (max-width:768px)
+@media screen and (max-width:767.5px)
 {
     .social-icons-main{
         opacity: 0;
@@ -2218,4 +2222,16 @@ b, strong {
 .pre-next h6 a:hover{
     color: #f0cb00;
     cursor: pointer;
+}
+
+@media screen and (max-width: 575.5px)
+{
+    #single-blog-desc div{
+        width: 100%;
+        text-align: left;
+    }
+}
+
+.fas.fa-bars.nav-icon{
+    font-weight: 900!important;
 }

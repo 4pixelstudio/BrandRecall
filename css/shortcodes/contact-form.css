@@ -10,7 +10,7 @@ NOTE: This file contains Contact form CSS.
         Contact form
 *************************/
 /*form-control*/
-.form-control { border-radius: 4px; height: auto; line-height: 1.33333; padding: 15px 18px 15px 30px; background: #fff; color: #363636; border: 1px solid #dbdbdb; box-shadow: none; }
+.form-control { border-radius: 4px; height: auto; line-height: 1.33333; padding: 15px 48px 15px 30px; background: #fff; color: #363636; border: 1px solid #dbdbdb; box-shadow: none; }
 .form-control:focus {
     outline: none;
     border: 1px solid #ffdd21;

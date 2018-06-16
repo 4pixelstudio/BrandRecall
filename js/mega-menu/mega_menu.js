@@ -103,7 +103,7 @@
                     if (settings.mobile_settings.collapse === true) {
                         // append the mobile collapse trigger button
                         menu_logo_li.append('<div class="menu-mobile-collapse-trigger">' +
-                            '<i class="fa fa-bars nav-icon" aria-hidden="true"></i>' +
+                            '<i class="fas fa-bars nav-icon" aria-hidden="true"></i>' +
                             '</div>');
                         // hide the menu links, menu social bar
                         var drop_down = menu_links.add(menu_socialBar);

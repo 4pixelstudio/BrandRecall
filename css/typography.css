@@ -121,8 +121,8 @@ section { background: #ffffff; }
 /*************************
     back to top
 *************************/
-#back-to-top .top { z-index: 998; -webkit-transform: translatez(0); -moz-transform: translatez(0); -ms-transform: translatez(0); -o-transform: translatez(0); transform: translatez(0); position: fixed; margin: 0px; color: #363636; transition: none; position:fixed; bottom:95px; right:15px; background: transparent; font-size: 14px; background: #ffdd21; width: 40px; height: 40px; text-align: center; }
-#back-to-top i { padding-top: 3px; font-size: 30px; }
+#back-to-top .top { z-index: 998; -webkit-transform: translatez(0); -moz-transform: translatez(0); -ms-transform: translatez(0); -o-transform: translatez(0); transform: translatez(0); position: fixed; margin: 0px; color: #363636; transition: none; position:fixed; bottom:50px; right:15px; background: transparent; background: #ffdd21; width: 35px; height: 35px; text-align: center; }
+#back-to-top i { padding-top: 5px; font-size: 25px; }
 #back-to-top span { display: block; line-height: 8px; font-size: 11px; color: #000;}
   
  /*************************
