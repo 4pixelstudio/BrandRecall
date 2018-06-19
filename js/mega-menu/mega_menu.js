@@ -6,7 +6,7 @@
         links_align: 'left',        // align the links left or right. options (left) or (right)
         socialBar_align: 'left',    // align the socialBar left or right. options (left) or (right)
         searchBar_align: 'right',   // align the search bar left or right. options (left) or (right)
-        trigger: 'hover',           // show drop down using click or hover. options (hover) or (click)
+        trigger: 'click',           // show drop down using click or hover. options (hover) or (click)
         effect: 'fade',             // drop down effects. options (fade), (scale), (expand-top), (expand-bottom), (expand-left), (expand-right)
         effect_speed: 400,          // drop down show speed in milliseconds
         sibling: true,              // hide the others showing drop downs if this option true. this option works on if the trigger option is "click". options (true) or (false)
@@ -18,7 +18,7 @@
         full_width: true,           // make menu full width. options (true) or (false)
         // MOBILE MODE SETTINGS
         mobile_settings: {
-            collapse: false,    // collapse the menu on click. options (true) or (false)
+            collapse: true,    // collapse the menu on click. options (true) or (false)
             sibling: true,      // hide the others showing drop downs when click on current drop down. options (true) or (false)
             scrollBar: true,    // enable the scroll bar. options (true) or (false)
             scrollBar_height: 400,  // scroll bar height in px value. this option works if the scrollBar option true.
@@ -49,7 +49,8 @@
                 activeClass = 'active',
                 activeTrigger = 'activeTrigger',
                 activeTriggerMobile = 'activeTriggerMobile',
-                dropDown = '.drop-down-multilevel, .drop-down, .drop-down-tab-bar',
+                // dropDown = '.drop-down-multilevel, .drop-down, .drop-down-tab-bar',
+                dropDown = '.menu-links',
                 desktopTopFixed = 'desktopTopFixed',
                 mobileTopFixed = 'mobileTopFixed',
                 fullWidth = 'menuFullWidth',
@@ -102,7 +103,7 @@
                     // check if the collapse true
                     if (settings.mobile_settings.collapse === true) {
                         // append the mobile collapse trigger button
-                        menu_logo_li.append('<div class="menu-mobile-collapse-trigger">' +
+                        menu_logo_li.append('<div class="menu-mobile-collapse-trigger" id="toggle-postition">' +
                             '<i class="fas fa-bars nav-icon" aria-hidden="true"></i>' +
                             '</div>');
                         // hide the menu links, menu social bar
@@ -252,12 +253,14 @@
                     }
                 },
                 // outside click to close drop downs
-                /*outside_close: function () {
+                outside_close: function () {
                     // check if the outside close setting true for desktop
+                    
                     if (settings.outside_click_close === true
                         && settings.trigger === 'click'
                         && $this.find(dropDown).is(':visible')) {
                         // add the click trigger on document
+                        alert('IF');
                         $(document).off('click').on('click', function (event) {
                             if (!$this.is(event.target) && $this.has(event.target).length === 0) {
                                 $this.find(dropDown).removeClass(activeClass);
@@ -266,9 +269,10 @@
                         });
                     } else {
                         // on mobile mode off the click trigger
+                        alert('ELSE');
                         $(document).off('click');
                     }
-                },*/
+                },
                 // scroll bar for mobile mode
                 scroll_bar: function () {
                     // check if the scroll bar true
@@ -374,14 +378,15 @@
             Canvas.social_bar_Align();
             Canvas.search_bar_Align();
             Canvas.collapse_trigger_button();
-            Canvas.hover_trigger();
+            // Canvas.hover_trigger();
             Canvas.mobile_trigger();
             Canvas.click_trigger();
             // Canvas.outside_close();
             Canvas.scroll_bar();
             Canvas.top_Fixed();
             Canvas.sticky_Header();
-            Canvas.position();
+            Canvas.switch_effects();
+            // Canvas.position();
             // window resize function used for update the function on windows resize
             $(window).resize(function () {
                 // Canvas.outside_close();

@@ -810,10 +810,10 @@ var _arr  = {};
  //Document ready functions
     $document.ready(function () {
         POTENZA.megaMenu(),
-        POTENZA.counters(),
+        // POTENZA.counters(),
         POTENZA.accordion(),
         POTENZA.carousel(),
-        POTENZA.mailchimp(),
+        // POTENZA.mailchimp(),
         POTENZA.contactform(),
         POTENZA.countdownTimer(),
         POTENZA.goToTop(),
@@ -824,12 +824,12 @@ var _arr  = {};
         POTENZA.mediaPopups(),
         POTENZA.pniceScroll(),        
         POTENZA.datetimepick(),
-        POTENZA.datatables(),
-        POTENZA.wowanimation(),
+        // POTENZA.datatables(),
+        // POTENZA.wowanimation(),
         POTENZA.googlemaps(),
         POTENZA.fancyselect(),
         POTENZA.searchbox(),
-        POTENZA.cartbox(),
+        // POTENZA.cartbox(),
         POTENZA.raindrops(),
         POTENZA.sidepanel(),
         POTENZA.slickslider(),
@@ -847,7 +847,6 @@ if ($(window).scrollTop() > 100) {
 }
 
 $(window).scroll(function() {
-
     if ($(window).scrollTop() > 100) {
         $('#menu').addClass('sticky');
     } else {
@@ -880,4 +879,41 @@ $('.toggle-icons-opacity').click(function(){
     else{
         $('.social-icons-main').addClass('opacity-toggle');
     }
+});
+
+
+$(document).ready(function () {
+    function CloseNav() {
+        $(".navbar-collapse").stop().css({ 'height': '1px' }).removeClass('in').addClass("collapse");
+        $(".navbar-toggle").stop().removeClass('collapsed');
+        $('#bars').removeClass('fa-times');
+        $('#bars').addClass('fa-bars');
+    }
+
+    $('html').click(function (event) {
+        var clickover = $(event.target);
+        // alert(clickover.hasClass('navbar-toggle'));
+        var _opened = $(".navbar-collapse").hasClass("in");
+        // alert(_opened);
+        if (_opened === true && !clickover.hasClass("navbar-toggle") && !clickover.hasClass("dropdown-toggle") && !clickover.hasClass("nav-fa")) {
+            CloseNav();
+        }
+    });
+});
+
+
+$('.navbar-toggle').click(function(){
+    if($('#bars').hasClass('fa-bars'))
+    {
+        $('#bars').removeClass('fa-bars');
+        $('#bars').addClass('fa-times');
+    }
+    else{
+        $('#bars').removeClass('fa-times');
+        $('#bars').addClass('fa-bars');
+    }
+});
+
+document.getElementById("to-section").addEventListener("click", function(event){
+    event.preventDefault()
 });
