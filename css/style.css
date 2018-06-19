@@ -2137,7 +2137,7 @@ html *
 }
 
 .portfolio-grid .grid-item{
-    margin-bottom: 30px;
+    margin-bottom: 16px;
 }
 
 .footer h6{
@@ -2364,4 +2364,9 @@ b, strong {
 
 .search-blog-results ul li a{
     color: #363636;
+}
+
+.portfolio-grid.custom-portfolio-padding > div{
+    padding-right: 8px;
+    padding-left: 8px;
 }

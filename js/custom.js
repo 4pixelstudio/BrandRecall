@@ -478,10 +478,7 @@ POTENZA.masonry = function () {
                  }, 800, function(){
                  window.location.hash = hash;
                });          
-              } // End if
-             if($('.navbar-toggle').css('display') != 'none'){
-               $(".navbar-toggle").trigger( "click" );
-             }
+              }
         });
     }
 
@@ -860,13 +857,13 @@ $(document).ready(function(){
         $.fn.modal.Constructor.prototype.setScrollbar = function () {
             oldSSB.apply(this);
             if(this.bodyIsOverflowing && this.scrollbarWidth) {
-                $('.menu-links').css('padding-right', this.scrollbarWidth + 11.5);
+                $('.navbar-nav').css('padding-right', this.scrollbarWidth);
             }       
         }
         var oldRSB = $.fn.modal.Constructor.prototype.resetScrollbar;
         $.fn.modal.Constructor.prototype.resetScrollbar = function () {
             oldRSB.apply(this);
-            $('.menu-links').css('padding-right', '');
+            $('.navbar-nav').css('padding-right', '');
         }
     });
 });
