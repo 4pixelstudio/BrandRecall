@@ -2336,3 +2336,32 @@ b, strong {
     border-bottom: 1px dashed #dbdbdb;
     padding: 10px 0px;
 }
+
+/* Search Blog */
+
+.search-blog-results{
+    background: #fff;
+    left:15px;
+    right:15px;
+    max-height: 800px;
+    overflow: auto;
+    position: absolute;
+    z-index: 998;
+    border: 1px solid #dbdbdb;
+    padding: 10px 20px;
+    display: none;
+    margin-top: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.search-blog-results ul li{
+    list-style-type: none;
+    padding: 5px 10px;
+    color: #363636;
+    font-size: 1.6rem;
+}
+
+.search-blog-results ul li a{
+    color: #363636;
+}

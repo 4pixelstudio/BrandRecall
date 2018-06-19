@@ -914,6 +914,24 @@ $('.navbar-toggle').click(function(){
     }
 });
 
-document.getElementById("to-section").addEventListener("click", function(event){
-    event.preventDefault()
+// document.getElementById("to-section").addEventListener("click", function(event){
+//     event.preventDefault()
+// });
+
+$('#search-blog').on('keyup', function() {
+    if (this.value.length > 0) {
+        document.getElementById("search-b-results").style.display = "block";
+    }
+    else{
+        document.getElementById("search-b-results").style.display = "none";
+    }
+});
+
+$('#search-portfolio').on('keyup', function() {
+    if (this.value.length > 0) {
+        document.getElementById("search-p-results").style.display = "block";
+    }
+    else{
+        document.getElementById("search-p-results").style.display = "none";
+    }
 });
